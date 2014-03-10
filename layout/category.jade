@@ -1,0 +1,11 @@
+include _views/post
+extends _views/main
+
+block main
+  -page.posts.each(function(post){
+    +post(post, 'category')
+  -})
+
+block head
+  title
+    = page.category + ' - ' + config.title

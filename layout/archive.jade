@@ -1,0 +1,20 @@
+include _views/post
+extends _views/main
+
+block main
+  -var time
+  -page.posts.each(function(post){
+    -var year = post.date.year()
+    -if(time != year){
+      -if(time){
+        h2.archive-title
+          = year
+      -}
+      -time = year
+    -}
+    +post(post, 'archive')
+  -})
+
+block head
+  title
+    = 'Archives - ' + config.title

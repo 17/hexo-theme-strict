@@ -1,0 +1,18 @@
+doctype
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/css/main.css')
+    if theme.rss
+      link(rel='alternative', href = theme.rss, title = config.title, type='application/atom+xml')
+    if theme.favicon
+      link(rel="icon", href = theme.favicon)
+    block head
+body
+  header.site-head
+    h1.site-title.u-fl: a(href = config.root)
+      = config.title
+    include nav

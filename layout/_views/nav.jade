@@ -1,0 +1,5 @@
+nav.site-nav.u-fr
+  ul.site-nav__list
+    each val, index in theme.menu
+      li.site-nav__item: a.site-nav__link(href = val)
+        = index

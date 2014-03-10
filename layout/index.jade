@@ -1,0 +1,11 @@
+include _views/post
+extends _views/main
+
+block main
+  -page.posts.each(function(post){
+    +post(post, 'index')
+  -})
+
+block head
+  title
+    = config.title
