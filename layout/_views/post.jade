@@ -8,7 +8,7 @@ mixin post(post,index)
     if index != 'archive'
       div.post__main
         if post.img
-          a.post__image(href=): img(src = post.img, alt='featured-image')
+          a.post__image(href = config.root + post.path): img(src = post.img, alt = 'featured-image')
         if post.excerpt && index == 'index'
           != post.excerpt
         else
