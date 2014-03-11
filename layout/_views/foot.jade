@@ -1,6 +1,8 @@
 footer.site-foot
   div.site-copy.u-fl
-    != '&copy;&nbsp;' + date(new Date(), 'YYYY') + '&nbsp;' + (config.author || config.title) + (theme.themes_mata || '')
+    = '© ' + date(new Date(), 'YYYY') + ' ' + (config.author || config.title) 
+    bdi
+      != (theme.themes_mata || '')
   include menu
 
 if config.disqus_shortname
