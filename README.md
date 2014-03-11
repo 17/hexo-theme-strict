@@ -1,6 +1,6 @@
 # Hexo-Theme-Strict
 
-![Hexo-Theme-Strict](http://i.imgur.com/VKOFmbi.png)
+![Hexo-Theme-Strict](http://i.imgur.com/A0cKWPh.png)
 
 Strict 是一个简洁的 hexo 主题, 它的配色来自默认主题 [landscape](https://github.com/hexojs/hexo-theme-landscape).
 
@@ -8,6 +8,7 @@ Strict 是一个简洁的 hexo 主题, 它的配色来自默认主题 [landscape
 
 **Install**
 ```
+$ npm install hexo-renderer-jade --save
 $ git clone git@github.com:unmric/hexo-theme-strict.git themes/strict
 ```
 
