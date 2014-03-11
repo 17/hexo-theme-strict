@@ -218,7 +218,7 @@ a:hover {
 .site-head,
 .site-foot {
   height: 120px;
-  line-height: 120px;
+  line-height: 118px;
   background-color: #262a30;
   border: 1px solid #000;
   box-shadow: 1px 2px 3px #ddd;
@@ -528,6 +528,83 @@ a:hover {
   margin: 30px;
   font-size: 26px;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .site-head,
+  .site-main,
+  .site-foot {
+    width: 90%;
+  }
+  .site-head,
+  .site-foot {
+    padding: 20px;
+    height: auto;
+    line-height: inherit;
+  }
+  .site-title,
+  .site-nav,
+  .site-copy,
+  .page-menu {
+    float: none;
+  }
+  .site-main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .site-head {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .site-nav {
+    margin-top: 10px;
+  }
+  .site-nav__item {
+    margin-left: 0;
+    margin: 0 5px;
+  }
+  .post {
+    margin-top: 20px;
+  }
+  .post__head,
+  .post__main {
+    margin: 20px;
+  }
+  .post__title {
+    margin-top: 2px;
+  }
+  .post__main blockquote,
+  .post__main .highlight {
+    padding: 20px;
+    margin: 30px -20px;
+  }
+  .post__foot {
+    position: relative;
+    padding: 10px;
+  }
+  .post__tag {
+    display: none;
+  }
+  .post__more {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .post__image {
+    margin: 20px -20px;
+  }
+  .post__image img {
+    margin: 0 auto;
+  }
+  .site-foot {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .page-menu {
+    margin-top: 10px;
+  }
+  .site-foot bdi {
+    display: none;
+  }
 }
 /* State */
 .page-menu__link--disabled {
