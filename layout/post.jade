@@ -5,7 +5,7 @@ block main
   +post(page, 'post')
   if config.disqus_shortname && page.comments
     div.comments
-      div.disqus_thread
+      div#disqus_thread
         noscript.
           Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
 
