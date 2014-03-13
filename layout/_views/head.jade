@@ -6,12 +6,13 @@ html
     if config.description
       meta(name='description', content = config.description)
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    != css('css/main')
     if theme.rss
       link(rel='alternative', href = theme.rss, title = config.title, type='application/atom+xml')
     if theme.favicon
       link(rel="icon", href = theme.favicon)
     block head
+    != css('css/main')
+    | <!--[if lt IE 9]><script>(function(a,b){a="abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video".split(" ");for(b=a.length-1;b>=0;b--)document.createElement(a[b])})()</script><![endif]-->
 body
   header.site-head
     h1.site-title.u-fl: a(href = config.root)
