@@ -21,6 +21,6 @@ mixin post(post,index)
               = tag.name
           - })
       if post.excerpt && index == 'index'
-        a.post__more.u-fr.u-fr(href = config.root + post.path + '#more')= theme.excerpt_link
+        a.post__more.u-fr(href = config.root + post.path + '#more')= theme.excerpt_link
       else
         a.post__foot-link.u-fr(href = config.root + post.path + '#disqus_thread')= theme.comment_link
