@@ -255,7 +255,6 @@ a:hover {
   overflow: hidden;
   margin-top: 30px;
   background-color: #fff;
-  border: 1px solid #ddd;
   box-shadow: 1px 2px 3px #ddd;
 }
 .post__head {
@@ -512,6 +511,7 @@ a:hover {
   content: "#";
 }
 .post__more {
+  padding: 10px 20px;
   color: #fff;
   border: 1px solid #bbb;
   background-color: #ccc;
