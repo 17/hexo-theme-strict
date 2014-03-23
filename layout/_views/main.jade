@@ -1,4 +1,19 @@
-include head
-main.site-main
-  block main
-include foot
+doctype html
+html
+  head
+    include head
+  body
+    header.site-head
+      h1.site-title.u-fl: a(href = config.root)
+        = config.title
+      include nav
+    main.site-main
+      block main
+    footer.site-foot
+      div.site-copy.u-fl
+        = '© ' + date(new Date(), 'YYYY') + ' ' + (config.author || config.title)
+        if theme.themes_mata
+          bdi
+            != theme.themes_mata
+      include menu
+    include foot
