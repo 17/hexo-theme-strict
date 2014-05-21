@@ -3,17 +3,17 @@ html
   head
     include head
   body
-    header.site-head
-      h1.site-title.u-fl: a(href = config.root)
+    header.head
+      h1.head-title.u-fl: a(href = config.root)
         = config.title
       include nav
-    main.site-main
+    main.main
       block main
-    footer.site-foot
-      div.site-copy.u-fl
+    footer.foot
+      div.foot-copy.u-fl
         = '© ' + date(new Date(), 'YYYY') + ' ' + (config.author || config.title)
         if theme.themes_mata
           bdi
             != theme.themes_mata
-      include menu
+      block menu
     include foot

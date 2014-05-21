@@ -1,9 +1,10 @@
 include _views/post
+include _views/menu
 extends _views/main
 
 block main
   -var time
-  -page.posts.each(function(post){
+  -site.posts.sort('date', 'desc').each(function(post){
     -var year = post.date.year()
     -if(time != year){
       -if(time){

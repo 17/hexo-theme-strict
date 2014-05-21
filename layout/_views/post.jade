@@ -1,4 +1,4 @@
-mixin post(post,index)
+mixin post(post, index)
   article.post
     header.post__head
       time.post__time(datetime = date_xml(post.date))
@@ -6,9 +6,9 @@ mixin post(post,index)
       h1.post__title: a(href = config.root + post.path)
         = post.title
     if index != 'archive'
-      div.post__main
-        if post.img
-          a.post__image(href = config.root + post.path): img(src = post.img, alt = 'featured-image')
+      if post.img
+        a.post__image(href = config.root + post.path): img(src = post.img, alt = 'featured-image')
+      div.post__main.echo
         if post.excerpt && index == 'index'
           != post.excerpt
         else

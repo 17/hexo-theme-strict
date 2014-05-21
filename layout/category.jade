@@ -1,4 +1,5 @@
 include _views/post
+include _views/menu
 extends _views/main
 
 block main
@@ -9,3 +10,6 @@ block main
 block head
   title
     = page.category + ' - ' + config.title
+
+block menu
+  +menu('category')

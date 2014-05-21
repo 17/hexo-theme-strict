@@ -1,20 +1,18 @@
-highlight-background = #2d2d2d
-highlight-current-line = #393939
-highlight-selection = #515151
-highlight-foreground = #cccccc
-highlight-comment = #999999
-highlight-red = #f2777a
-highlight-orange = #f99157
-highlight-yellow = #ffcc66
-highlight-green = #99cc99
-highlight-aqua = #66cccc
-highlight-blue = #6699cc
-highlight-purple = #cc99cc
-
-.post__main pre
+.highlight
+  overflow: auto
+  background-color: $highlight-background
+  color: #CCCCCC
+  .gutter
+    color: #666666
+  figcaption
+    margin-bottom: 1em
+    color: #999999
+    font-size: .85em
+    a
+      float: right
   .comment
   .title
-    color: highlight-comment
+    color: $highlight-comment
   .variable
   .attribute
   .tag
@@ -27,27 +25,27 @@ highlight-purple = #cc99cc
   .css .id
   .css .class
   .css .pseudo
-    color: highlight-red
+    color: $highlight-red
   .number
   .preprocessor
   .built_in
   .literal
   .params
   .constant
-    color: highlight-orange
+    color: $highlight-orange
   .class
   .ruby .class .title
   .css .rules .attribute
-    color: highlight-green
+    color: $highlight-green
   .string
   .value
   .inheritance
   .header
   .ruby .symbol
   .xml .cdata
-    color: highlight-green
+    color: $highlight-green
   .css .hexcolor
-    color: highlight-aqua
+    color: $highlight-aqua
   .function
   .python .decorator
   .python .title
@@ -56,7 +54,7 @@ highlight-purple = #cc99cc
   .perl .sub
   .javascript .title
   .coffeescript .title
-    color: highlight-blue
+    color: $highlight-blue
   .keyword
   .javascript .function
-    color: highlight-purple
+    color: $highlight-purple
