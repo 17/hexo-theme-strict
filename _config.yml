@@ -7,9 +7,9 @@ favicon: /favicon.png
 
 # main
 date_format: 'MMMM D, YYYY'
-excerpt_link: Read More
+excerpt_link: READ MORE
 comment_link: 0 COMMENTS
 
 # foot
-themes_mata: ' ❤ Theme by <a href="http://unmric.com" target="_blank">unmric</a>'
+# themes_mata: ' ❤ Theme by <a href="http://unmric.com" target="_blank">unmric</a>'
 google_analytics:
