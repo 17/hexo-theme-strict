@@ -27,17 +27,18 @@
     font-size-rem(14)
   p
     margin: 1em 0
-  ol
-  ul
-  dl
-  hr
-  img
-  pre
-  form
-  table
-  figure
+
   address
   blockquote
+  dl
+  figure
+  form
+  hr
+  img
+  ol
+  pre
+  table
+  ul
     margin: 1.6em 0
   hr
     margin: 1.6em auto
@@ -54,24 +55,26 @@
     color: #777777
   thead
     background-color: #EEEEEE
+  td
   th
-  td 
     border: 1px solid #cbcbcb
     padding: .5em 1em
     text-align: left
     font-weight: normal
   tfoot
     background-color: #f4f4f4
-  ol, ul, dl
+  dl
+  ol
+  ul
     margin-left:2em
+  dd
+    margin-left: 1em
+  // dt
+  //   font-weight: bold
   ol
     list-style: decimal outside
   ul
     list-style: disc outside
-  // dt
-  //   font-weight: bold
-  dd
-    margin-left: 1em
   figcaption
     font-size: .85em
   blockquote small,
@@ -83,18 +86,23 @@
     font-style: normal
   code
     display: inline-block
+    // ><code>
+    // 排版无需空格, 使用半角空格宽度防止粘连 1em / 2 / 2
+    // margin: 0 .25em
+    // >[]<code></code>,
+    // 排版须有空格, 1em 防止标点符号粘连
     margin: 0 .1em
-    padding: .1em .6em
+    padding: 0 .5em
     border: 1px solid #CCCCCC
     border-radius: 3px
     background-color: #F7F7F7
     text-shadow: 0 1px 0 #FFFFFF
     white-space: nowrap
     font-size: 0.85em
-    line-height: 1.2
+    line-height: normal
   kbd
     @extend .echo code
-    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #FFFFFF inset
+    box-shadow: 0 1px 0px #CCCCCC, 0 0 0 2px #FFFFFF inset
   blockquote
     padding: 1.6em
     border-left: 5px solid #DDDDDD
