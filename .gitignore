@@ -1,1 +1,9 @@
-node_modules
+# IDEA
+.idea/
+*.iml
+
+#VAGRANT
+.vagrant/
+
+# NODE
+node_modules/
